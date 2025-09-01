@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install)",
+      "Bash(npm run build)",
+      "Bash(npm search:*)",
+      "Bash(npm install:*)",
+      "mcp__openai-client__llm-complete",
+      "Bash(node test-multiline:*)",
+      "Bash(node test-full-config.js)"
+    ],
+    "deny": [
+      "Bash(curl:*)",
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./secrets/**)"
+    ],
+    "ask": []
+  }
+}
