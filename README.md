@@ -67,6 +67,7 @@ npm start
 
 ### 2. Configure in Claude Code
 
+#### Option 1: Manual Configuration
 Add to Claude Code settings:
 
 ```json
@@ -82,6 +83,15 @@ Add to Claude Code settings:
   }
 }
 ```
+
+#### Option 2: Using Claude CLI
+You can also add the MCP server using the Claude CLI command:
+
+```bash
+claude mcp add openai-client node /path/to/your/mcp-openai-client/dist/index.js
+```
+
+Replace `/path/to/your/mcp-openai-client/dist/index.js` with the actual path to your compiled index.js file.
 
 ### 3. Call LLM in Claude Code
 
