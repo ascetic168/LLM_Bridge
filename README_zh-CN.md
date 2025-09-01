@@ -67,6 +67,7 @@ npm start
 
 ### 2. 在 Claude Code 中配置
 
+#### 选项 1: 手动配置
 在 Claude Code 的设置中加入：
 
 ```json
@@ -82,6 +83,15 @@ npm start
   }
 }
 ```
+
+#### 选项 2: 使用 Claude CLI
+您也可以使用 Claude CLI 命令来添加 MCP 服务器：
+
+```bash
+claude mcp add openai-client node /path/to/your/mcp-openai-client/dist/index.js
+```
+
+将 `/path/to/your/mcp-openai-client/dist/index.js` 替换为您编译后的 index.js 文件的实际路径。
 
 ### 3. 在 Claude Code 中调用 LLM
 
