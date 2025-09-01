@@ -103,3 +103,6 @@ Thumbs.db
 
 # User rules
 userrules
+
+# Claude configuration
+.claude/
